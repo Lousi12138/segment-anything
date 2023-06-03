@@ -13,6 +13,9 @@ import json
 import os
 from typing import Any, Dict, List
 
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+
 parser = argparse.ArgumentParser(
     description=(
         "Runs automatic mask generation on an input image or directory of images, "
